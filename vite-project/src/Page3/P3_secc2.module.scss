@@ -1,0 +1,85 @@
+@mixin TheKidLaroi{
+    width: 308px;
+    height: 256px;
+    background-color: white;
+    border: 0.2px solid gray;
+    border-radius: 20px;
+    .info{
+        width: 132px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        justify-content: space-around;
+        h1{
+            font-size: 18px;
+        }
+        p{
+            font-size: 18px;
+            color: #1DBF73;
+        }
+    }
+}
+@mixin JustinBieber{
+    width: 308px;
+    height: 256px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    h1{
+        font-size: 30px;
+        color: #1DBF73;
+    }
+}
+.works{
+    width: 100vw;
+    height: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    .box{
+        width: 1322px;
+        height: 1071px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        .grid{
+            width: 1322px;
+            height: 888px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .add{
+                @include JustinBieber;
+            }
+            .card{
+                @include TheKidLaroi;
+            }
+        }
+        .foot{
+            width: 1322px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                width: 238px;
+                height: 54px;
+                color: #1DBF73;
+                background-color: white;
+                cursor: pointer;
+                font-size: 18px;
+                border-radius: 30px;
+                border: 0.2px solid #1DBF73;
+            }
+        }
+    }
+}

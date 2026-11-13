@@ -1,0 +1,106 @@
+$colors: black;
+@mixin zxc{
+    width: 1303px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer{
+    width: 100vw;
+    height: 458px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F0FE;
+    .box{
+        @include zxc;
+        .row{
+            width: 1303px;
+            height: 238px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            .col1{
+                width: 195px;
+                height: 238px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                h1{
+                    font-size: 24px;
+                }
+                .list{
+                    width: 156px;
+                    height: 179px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-around;
+                    color: $colors;
+                }
+            }
+            .col2{
+                width: 172px;
+                height: 184px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                h1{
+                    font-size: 24px;
+                }
+                .list{
+                    width: 172px;
+                    height: 125px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-around;
+                    color: $colors;
+                }
+            }
+            .col3{
+                width: 178px;
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                h1{
+                    font-size: 24px;
+                }
+                .list{
+                    width: 178px;
+                    height: 71px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-around;
+                    color: $colors;
+                }
+            }
+            .col4{
+                width: 290px;
+                height: 109px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                h1{
+                    font-size: 24px;
+                }
+                .list{
+                    width: 290px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $colors;
+                }
+            }
+        }
+    }
+}

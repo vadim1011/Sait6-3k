@@ -1,0 +1,93 @@
+@mixin CMH{
+    width: 1320px;
+    height: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card{
+        width: 420px;
+        height: 225px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 0.2px solid gray;
+        border-radius: 15px;
+        .item{
+            width: 380px;
+            height: 185px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            .head{
+                width: 250px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .user{
+                    width: 150px;
+                    height: 72px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-between;
+                    h1{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.rev{
+    width: 100vw;
+    height: 793px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box{
+        width: 1320px;
+        height: 693px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        h1{
+            font-size: 24px;
+        }
+        .tabs{
+            width: 317px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+            span{
+                color: #1DBF73;
+            }
+        }
+        .grid{
+            @include CMH;
+        }
+        .foot{
+            width: 1322px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                width: 238px;
+                height: 54px;
+                color: #1DBF73;
+                background-color: white;
+                cursor: pointer;
+                font-size: 18px;
+                border-radius: 30px;
+                border: 0.2px solid #1DBF73;
+            }
+        }
+    }
+}

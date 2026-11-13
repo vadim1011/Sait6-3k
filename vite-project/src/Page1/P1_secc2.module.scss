@@ -1,0 +1,81 @@
+.works{
+    width: 100vw;
+    height: 700px;
+    background-color: #F6FAFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box{
+        width: 1320px;
+        height: 647px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .grid{
+            width: 1320px;
+            height: 580px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card{
+                width: 420px;
+                height: 270px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 3px solid #F2F0FE;
+                border-radius: 20px;
+                .item{
+                    width: 380px;
+                    height: 230px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-between;
+                    p{
+                        font-size: 17px;
+                    }
+                    .head{
+                        width: 290px;
+                        height: 44px;
+                        display: flex;
+                        align-items: center;
+                        justify-content:start;
+                        gap: 20px;
+                        font-size: 7px;
+                        img{
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+                    .btn{
+                        width: 380px;
+                        height: 41px;
+                        border-radius: 30px;
+                        color: #1DBF73;
+                        font-size: 16px;
+                        border: 1px solid #1DBF73;
+                        background-color: #F7F6FF;
+                        cursor: pointer;
+                    }
+                    .btn:hover{
+                        transition: 0.2s;
+                        color: white;
+                        background-color: #1DBF73;
+                    }
+                }
+            }
+            .more{
+                width: 420px;
+                height: 270px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #F2F0FE;
+                color: #1DBF73;
+                font-size: 18px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
